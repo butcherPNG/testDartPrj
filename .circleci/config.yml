@@ -1,0 +1,15 @@
+version: 2.1
+
+orbs:
+  dart: circleci/dart@1.0.0
+
+jobs:
+  build:
+    docker:
+      - image: circleci/dart:latest
+    steps:
+      - checkout
+      - dart/pub-get
+      - run:
+          name: Run server.dart
+          command: dart bin/server.dart
