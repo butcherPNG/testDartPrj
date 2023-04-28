@@ -1,7 +1,7 @@
 version: 2.1
 
 orbs:
-  dart: circleci/dart@1.0.0
+  dart: circleci/dart@1.1.2
 
 jobs:
   build:
